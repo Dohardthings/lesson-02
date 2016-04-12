@@ -1,0 +1,12 @@
+<nav>
+  <span>{{#link-to "new"}}{{fa-icon "fa-plus-circle"}}{{/link-to}}</span>
+</nav>
+  {{outlet}}
+
+ <div class="index-container">
+  {{#each model as |image|}}
+  <div class="single-image">
+    {{image.url}} {{image.caption}}
+  </div>
+  {{/each}}
+ </div>

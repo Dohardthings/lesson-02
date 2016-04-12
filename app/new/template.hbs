@@ -1,0 +1,9 @@
+<form {{action saveImage url caption on="submit"}}>
+  {{input placeholder="url" value=url}}
+  {{input placeholder="caption" value=caption}}
+
+  <button>save</button>
+{{#link-to "index"}}
+  <button>back</button>
+  {{/link-to}}
+</form>
